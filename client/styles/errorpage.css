@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/backdrop.jpg);
+  background-size: cover;
+  padding: 5rem 11rem;
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  backdrop-filter: blur(15px);
+  background: hsla(0, 0%, 100%, 0.3);
+}
+
+.logo {
+  max-width: 88px;
+  display: block;
+  padding: 2px 8px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 900;
+  font-family: var(--mont);
+  font-style: italic;
+  border: 3px solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.er-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.er-text > a {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+@media screen and (max-width: 769px) {
+    main {
+        padding: 8rem 0rem;
+      }  
+
+
+      .er-text {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 1rem;
+      }
+      
+}
